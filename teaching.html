@@ -10,49 +10,53 @@
   <style>
 
     /* ---------- GENERAL ---------- */
-
+    
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
       margin: 0;
-      background: #f8fbfd;
+      background-color: #f8fbfd;
       color: #314956;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
     }
-
-
+    
+    
     /* ---------- NAVIGATION ---------- */
-
+    
     nav {
-      background: white;
+      width: 100%;
+      background-color: white;
       border-bottom: 1px solid #dce8ee;
     }
-
+    
     .nav-container {
       max-width: 1050px;
       margin: auto;
       padding: 22px 30px;
-
+    
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
+    
     .name {
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Georgia, serif;
       font-size: 25px;
       color: #075985;
       text-decoration: none;
     }
-
+    
     .nav-links a {
       margin-left: 32px;
       color: #496676;
       text-decoration: none;
       font-size: 15px;
     }
-
-    .nav-links a:hover,
-    .nav-links a.active {
+    
+    .nav-links a:hover {
       color: #0284c7;
     }
 

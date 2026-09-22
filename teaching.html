@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teaching | Chaewon Seol</title>
+
+  <style>
+
+    /* ---------- GENERAL ---------- */
+
+    body {
+      margin: 0;
+      background: #f8fbfd;
+      color: #314956;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #dce8ee;
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 22px 30px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      color: #075985;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 32px;
+      color: #496676;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #0284c7;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    main {
+      max-width: 900px;
+      margin: 70px auto 100px;
+      padding: 0 30px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 44px;
+      font-weight: normal;
+      color: #075985;
+      margin-bottom: 8px;
+    }
+
+    .water-line {
+      width: 70px;
+      height: 3px;
+      background: #38a9d6;
+      border-radius: 10px;
+      margin: 18px 0 40px;
+    }
+
+
+    /* ---------- TEACHING PHILOSOPHY ---------- */
+
+    .teaching-intro {
+      background: #eef7fb;
+      border-left: 4px solid #38a9d6;
+      padding: 25px 30px;
+      margin-bottom: 55px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .teaching-intro p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #3f5e6d;
+    }
+
+
+    /* ---------- SECTION ---------- */
+
+    .teaching-section {
+      margin-bottom: 55px;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: normal;
+      color: #075985;
+
+      margin-bottom: 25px;
+      padding-bottom: 8px;
+
+      border-bottom: 1px solid #dce8ee;
+    }
+
+
+    /* ---------- FEATURED COURSE ---------- */
+
+    .featured-course {
+      background: white;
+      border: 1px solid #dce8ee;
+      border-radius: 10px;
+      padding: 28px 30px;
+
+      box-shadow: 0 3px 12px rgba(40, 80, 100, 0.05);
+    }
+
+    .course-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+    }
+
+    .course-title {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      color: #253f4d;
+    }
+
+    .course-date {
+      color: #78909c;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .course-level {
+      color: #608091;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+
+
+    /* ---------- COURSE STATS ---------- */
+
+    .course-stats {
+      display: flex;
+      gap: 35px;
+      margin-top: 24px;
+      margin-bottom: 22px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      color: #0c7eaa;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: #78909c;
+    }
+
+
+    /* ---------- AWARD ---------- */
+
+    .award {
+      display: inline-block;
+      margin-top: 20px;
+    
+      background: #eef7fb;
+      color: #176987;
+    
+      padding: 6px 13px;
+      border-radius: 20px;
+    
+      font-size: 13px;
+    }
+
+
+    /* ---------- TA COURSES ---------- */
+
+    .course-list {
+      background: white;
+      border: 1px solid #dce8ee;
+      border-radius: 10px;
+      padding: 5px 30px;
+    }
+
+    .course-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 20px 0;
+      border-bottom: 1px solid #edf2f4;
+    }
+
+    .course-item:last-child {
+      border-bottom: none;
+    }
+
+    .course-item-title {
+      font-size: 16px;
+      color: #314956;
+      font-weight: 600;
+    }
+
+    .course-item-info {
+      color: #78909c;
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    .course-item-date {
+      color: #608091;
+      font-size: 14px;
+      white-space: nowrap;
+      margin-left: 30px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      max-width: 900px;
+      margin: 40px auto 30px;
+
+      padding: 25px 30px;
+
+      border-top: 1px solid #dce8ee;
+
+      color: #78909c;
+      font-size: 13px;
+      text-align: center;
+    }
+
+
+    /* ---------- MOBILE ---------- */
+
+    @media (max-width: 700px) {
+
+      .nav-container {
+        padding: 18px 20px;
+      }
+
+      .nav-links a {
+        margin-left: 14px;
+        font-size: 14px;
+      }
+
+      main {
+        margin-top: 45px;
+        padding: 0 25px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .teaching-intro {
+        padding: 22px;
+      }
+
+      .course-header,
+      .course-item {
+        align-items: flex-start;
+      }
+
+      .course-stats {
+        gap: 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+  <div class="nav-container">
+
+    <a class="name" href="index.html">
+      Chaewon Seol
+    </a>
+
+    <div class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="research.html">
+        Research
+      </a>
+
+      <a href="teaching.html" class="active">
+        Teaching
+      </a>
+
+      <a href="CV_References_Seol_.pdf" target="_blank">
+        CV
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+<!-- MAIN CONTENT -->
+
+<main>
+
+
+  <h1>Teaching</h1>
+
+  <div class="water-line"></div>
+
+
+
+  <!-- TEACHING PHILOSOPHY -->
+
+  <div class="teaching-intro">
+
+    <p>
+      My teaching combines industry experience, quantitative rigor,
+      and enthusiasm for marketing. I connect marketing concepts to
+      real-world decisions through tangible examples and cases, while
+      integrating data science into the classroom. My goal is to make
+      learning both practically meaningful and engaging.
+    </p>
+
+  </div>
+
+
+
+  <!-- INSTRUCTOR -->
+  
+  <section class="teaching-section">
+  
+    <h2>Instructor</h2>
+  
+    <div class="featured-course">
+  
+      <div class="course-header">
+  
+        <div>
+          <div class="course-title">
+            Marketing Management
+          </div>
+  
+          <div class="course-level">
+            Undergraduate · Purdue University
+          </div>
+        </div>
+  
+        <div class="course-date">
+          Fall 2023
+        </div>
+  
+      </div>
+  
+      <div class="award">
+        Certificate for Outstanding Teaching
+      </div>
+  
+    </div>
+  
+  </section>
+
+
+
+
+
+  <!-- TEACHING ASSISTANT -->
+
+  <section class="teaching-section">
+
+    <h2>Teaching Assistant</h2>
+
+
+    <div class="course-list">
+
+
+      <div class="course-item">
+
+        <div>
+
+          <div class="course-item-title">
+            Data- and AI-Driven Marketing
+          </div>
+
+          <div class="course-item-info">
+            Undergraduate &amp; Master · 2 sessions
+          </div>
+
+        </div>
+
+        <div class="course-item-date">
+          Fall 2024
+        </div>
+
+      </div>
+
+
+
+      <div class="course-item">
+
+        <div>
+
+          <div class="course-item-title">
+            New Product Development
+          </div>
+
+          <div class="course-item-info">
+            Master · 2 sessions
+          </div>
+
+        </div>
+
+        <div class="course-item-date">
+          Fall 2022
+        </div>
+
+      </div>
+
+
+
+      <div class="course-item">
+
+        <div>
+
+          <div class="course-item-title">
+            Marketing Management
+          </div>
+
+          <div class="course-item-info">
+            Undergraduate · 5 sessions
+          </div>
+
+        </div>
+
+        <div class="course-item-date">
+          Fall 2021
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+  © 2026 Chaewon Seol
+</footer>
+
+
+</body>
+</html>

@@ -1,123 +1,220 @@
-<h1>Research</h1>
-<div class="water-line"></div>
+<style>
+
+/* ---------- GENERAL ---------- */
+
+body {
+  margin: 0;
+  background: #f8fbfd;
+  color: #314956;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
 
 
-<!-- PUBLICATIONS -->
+/* ---------- NAVIGATION ---------- */
 
-<section class="research-section">
-  <h2>Publications</h2>
+nav {
+  background: white;
+  border-bottom: 1px solid #dce8ee;
+}
 
-  <div class="paper">
-    <div class="paper-title">
-      Consumer Impatience, Technological Innovation, and Market Structure
-    </div>
+.nav-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    <div class="authors">
-      Chaewon Seol, Federico Rossi, Sara Valentini, and Elisa Montaguti
-    </div>
+.name {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: #075985;
+  text-decoration: none;
+}
 
-    <div class="publication">
-      Marketing Science, Articles in Advance, 2026
-    </div>
+.nav-links a {
+  margin-left: 32px;
+  color: #496676;
+  text-decoration: none;
+  font-size: 15px;
+}
 
-    <div class="note">
-      Selected for INFORMS Publicity Support
-    </div>
-
-    <div class="paper-links">
-      <a href="https://doi.org/10.1287/mksc.2024.0885" target="_blank">[Paper]</a>
-    </div>
-  </div>
-
-
-  <div class="paper">
-    <div class="paper-title">
-      Consumer Protection in the Era of Online Tracking:
-      Suggestions for Improving Legislative Framework
-    </div>
-
-    <div class="authors">
-      J. Na, H. Ko, J. Lee, J. Kim, S. Park, E. Cho, Lee, and Chaewon Seol
-    </div>
-
-    <div class="publication">
-      Policy Research Report, Korea Internet & Security Agency (KISA), 2018
-    </div>
-
-    <div class="paper-links">
-      <a href="https://www.kisa.or.kr/204/form?postSeq=0011807&lang_type=KO#fndoDocumentPreview"
-         target="_blank">[Report]</a>
-    </div>
-  </div>
-
-</section>
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0284c7;
+}
 
 
-<!-- JOB MARKET PAPER -->
+/* ---------- MAIN ---------- */
 
-<section class="research-section">
-  <h2>Job Market Paper</h2>
+main {
+  max-width: 900px;
+  margin: 70px auto 100px;
+  padding: 0 30px;
+}
 
-  <div class="paper">
-    <div class="paper-title">
-      Trajectory Matters: Retail Exposure and Zoning Policies in Legal Cannabis Market
-    </div>
+h1 {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  font-weight: normal;
+  color: #075985;
+  margin: 0;
+}
 
-    <div class="authors">
-      Chaewon Seol, Federico Rossi, and Ting Zhu
-    </div>
-
-    <div class="paper-description">
-      Quantifies the causal effect of dispensary exposure on consumption
-      using Transformer-based trajectories and storefront visual metrics,
-      and evaluates zoning policy effectiveness for youth protection.
-    </div>
-
-    <div class="paper-links">
-      <a href="#">[Abstract]</a>
-      <a href="YOUR_PAPER_LINK" target="_blank">[Paper]</a>
-    </div>
-  </div>
-
-</section>
+.water-line {
+  width: 70px;
+  height: 3px;
+  background: #38a9d6;
+  border-radius: 10px;
+  margin: 18px 0 50px;
+}
 
 
-<!-- WORK IN PROGRESS -->
+/* ---------- RESEARCH SECTIONS ---------- */
 
-<section class="research-section">
-  <h2>Work in Progress</h2>
+.research-section {
+  margin-bottom: 55px;
+}
 
-  <div class="paper">
-    <div class="paper-title">
-      How Valuable Is My Location Data? Monetization vs Privacy
-    </div>
+h2 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: normal;
+  color: #075985;
 
-    <div class="authors">
-      Chaewon Seol, Federico Rossi, and Ting Zhu
-    </div>
+  margin-bottom: 22px;
+  padding-bottom: 8px;
 
-    <div class="paper-description">
-      Uses large-scale trajectory and co-visit data to model retail
-      substitution patterns and quantify the incremental value of
-      consumer geolocation information.
-    </div>
-  </div>
+  border-bottom: 1px solid #dce8ee;
+}
 
 
-  <div class="paper">
-    <div class="paper-title">
-      A Field Experiment on the Impact of Interactive Signage Exposure
-      on Cannabis Consumption
-    </div>
+/* ---------- PAPER CARDS ---------- */
 
-    <div class="authors">
-      Chaewon Seol, Federico Rossi, Ting Zhu, and C. Thompson
-    </div>
+.paper {
+  background: white;
+  border: 1px solid #dce8ee;
+  border-radius: 10px;
 
-    <div class="paper-description">
-      Designs a large-scale field experiment using digital billboards
-      to evaluate digital ad effectiveness and optimize ad length and allocation.
-    </div>
-  </div>
+  padding: 24px 28px;
+  margin-bottom: 18px;
 
-</section>
+  box-shadow: 0 3px 12px rgba(40, 80, 100, 0.04);
+}
+
+.paper-title {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.45;
+  color: #253f4d;
+
+  margin-bottom: 8px;
+}
+
+.authors {
+  color: #608091;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.publication {
+  color: #0c7eaa;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.note {
+  display: inline-block;
+
+  margin-top: 10px;
+  padding: 4px 11px;
+
+  background: #eef7fb;
+  color: #176987;
+
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.paper-description {
+  margin-top: 13px;
+
+  color: #536f7e;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* ---------- LINKS ---------- */
+
+.paper-links {
+  margin-top: 13px;
+}
+
+.paper-links a {
+  color: #0c7eaa;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 13px;
+}
+
+.paper-links a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+
+/* ---------- JOB MARKET PAPER ---------- */
+
+.research-section:nth-of-type(2) .paper {
+  border-left: 4px solid #38a9d6;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  max-width: 900px;
+  margin: 40px auto 30px;
+  padding: 25px 30px;
+
+  border-top: 1px solid #dce8ee;
+
+  color: #78909c;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+  .nav-container {
+    padding: 18px 20px;
+  }
+
+  .nav-links a {
+    margin-left: 14px;
+    font-size: 14px;
+  }
+
+  main {
+    margin-top: 45px;
+    padding: 0 25px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .paper {
+    padding: 21px;
+  }
+
+}
+
+</style>

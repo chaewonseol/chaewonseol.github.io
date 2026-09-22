@@ -38,7 +38,7 @@
     }
 
     .name {
-      font-family: Georgia, serif;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 25px;
       color: #075985;
       text-decoration: none;
@@ -66,11 +66,11 @@
     }
 
     h1 {
-      font-family: Georgia, serif;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 44px;
       font-weight: normal;
       color: #075985;
-      margin-bottom: 8px;
+      margin: 0;
     }
 
     .water-line {
@@ -82,32 +82,30 @@
     }
 
 
-    /* ---------- TEACHING PHILOSOPHY ---------- */
+    /* ---------- TEACHING INTRO ---------- */
 
     .teaching-intro {
-      background: #eef7fb;
-      border-left: 4px solid #38a9d6;
-      padding: 25px 30px;
+      max-width: 850px;
       margin-bottom: 55px;
-      border-radius: 0 8px 8px 0;
     }
 
     .teaching-intro p {
       margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 16px;
       line-height: 1.8;
       color: #3f5e6d;
     }
 
 
-    /* ---------- SECTION ---------- */
+    /* ---------- SECTIONS ---------- */
 
     .teaching-section {
       margin-bottom: 55px;
     }
 
     h2 {
-      font-family: Georgia, serif;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 27px;
       font-weight: normal;
       color: #075985;
@@ -119,12 +117,13 @@
     }
 
 
-    /* ---------- FEATURED COURSE ---------- */
+    /* ---------- INSTRUCTOR COURSE ---------- */
 
     .featured-course {
       background: white;
       border: 1px solid #dce8ee;
       border-radius: 10px;
+
       padding: 28px 30px;
 
       box-shadow: 0 3px 12px rgba(40, 80, 100, 0.05);
@@ -138,47 +137,24 @@
     }
 
     .course-title {
-      font-family: Georgia, serif;
-      font-size: 21px;
-      color: #253f4d;
-    }
-
-    .course-date {
-      color: #78909c;
-      font-size: 14px;
-      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #314956;
     }
 
     .course-level {
+      font-family: Arial, Helvetica, sans-serif;
       color: #608091;
       font-size: 14px;
-      margin-top: 3px;
+      margin-top: 4px;
     }
 
-
-    /* ---------- COURSE STATS ---------- */
-
-    .course-stats {
-      display: flex;
-      gap: 35px;
-      margin-top: 24px;
-      margin-bottom: 22px;
-    }
-
-    .stat {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .stat-number {
-      font-family: Georgia, serif;
-      font-size: 25px;
-      color: #0c7eaa;
-    }
-
-    .stat-label {
-      font-size: 13px;
-      color: #78909c;
+    .course-date {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #608091;
+      font-size: 14px;
+      white-space: nowrap;
     }
 
 
@@ -186,24 +162,27 @@
 
     .award {
       display: inline-block;
+
       margin-top: 20px;
-    
+      padding: 6px 13px;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+
       background: #eef7fb;
       color: #176987;
-    
-      padding: 6px 13px;
+
       border-radius: 20px;
-    
-      font-size: 13px;
     }
 
 
-    /* ---------- TA COURSES ---------- */
+    /* ---------- TEACHING ASSISTANT COURSES ---------- */
 
     .course-list {
       background: white;
       border: 1px solid #dce8ee;
       border-radius: 10px;
+
       padding: 5px 30px;
     }
 
@@ -213,6 +192,7 @@
       align-items: center;
 
       padding: 20px 0;
+
       border-bottom: 1px solid #edf2f4;
     }
 
@@ -221,18 +201,21 @@
     }
 
     .course-item-title {
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
-      color: #314956;
       font-weight: 600;
+      color: #314956;
     }
 
     .course-item-info {
+      font-family: Arial, Helvetica, sans-serif;
       color: #78909c;
       font-size: 14px;
       margin-top: 2px;
     }
 
     .course-item-date {
+      font-family: Arial, Helvetica, sans-serif;
       color: #608091;
       font-size: 14px;
       white-space: nowrap;
@@ -245,7 +228,6 @@
     footer {
       max-width: 900px;
       margin: 40px auto 30px;
-
       padding: 25px 30px;
 
       border-top: 1px solid #dce8ee;
@@ -278,219 +260,218 @@
         font-size: 38px;
       }
 
-      .teaching-intro {
-        padding: 22px;
-      }
-
       .course-header,
       .course-item {
         align-items: flex-start;
       }
 
-      .course-stats {
-        gap: 25px;
-      }
-
     }
 
   </style>
+
 </head>
 
 
 <body>
 
 
-<!-- NAVIGATION -->
+  <!-- NAVIGATION -->
 
-<nav>
+  <nav>
 
-  <div class="nav-container">
+    <div class="nav-container">
 
-    <a class="name" href="index.html">
-      Chaewon Seol
-    </a>
-
-    <div class="nav-links">
-
-      <a href="index.html">
-        Home
+      <a class="name" href="index.html">
+        Chaewon Seol
       </a>
 
-      <a href="research.html">
-        Research
-      </a>
+      <div class="nav-links">
 
-      <a href="teaching.html" class="active">
-        Teaching
-      </a>
+        <a href="index.html">
+          Home
+        </a>
 
-      <a href="CV_References_Seol_.pdf" target="_blank">
-        CV
-      </a>
+        <a href="research.html">
+          Research
+        </a>
+
+        <a href="teaching.html" class="active">
+          Teaching
+        </a>
+
+        <a href="CV_References_Seol_.pdf" target="_blank">
+          CV
+        </a>
+
+      </div>
 
     </div>
 
-  </div>
-
-</nav>
+  </nav>
 
 
 
-<!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
 
-<main>
-
-
-  <h1>Teaching</h1>
-
-  <div class="water-line"></div>
+  <main>
 
 
+    <h1>Teaching</h1>
 
-  <!-- TEACHING PHILOSOPHY -->
-
-  <div class="teaching-intro">
-
-    <p>
-      My teaching combines industry experience, quantitative rigor,
-      and enthusiasm for marketing. I connect marketing concepts to
-      real-world decisions through tangible examples and cases, while
-      integrating data science into the classroom. My goal is to make
-      learning both practically meaningful and engaging.
-    </p>
-
-  </div>
+    <div class="water-line"></div>
 
 
 
-  <!-- INSTRUCTOR -->
-  
-  <section class="teaching-section">
-  
-    <h2>Instructor</h2>
-  
-    <div class="featured-course">
-  
-      <div class="course-header">
-  
-        <div>
-          <div class="course-title">
-            Marketing Management
-          </div>
-  
-          <div class="course-level">
-            Undergraduate · Purdue University
-          </div>
-        </div>
-  
-        <div class="course-date">
-          Fall 2023
-        </div>
-  
-      </div>
-  
-      <div class="award">
-        Certificate for Outstanding Teaching
-      </div>
-  
-    </div>
-  
-  </section>
+    <!-- TEACHING PHILOSOPHY -->
 
+    <div class="teaching-intro">
 
-
-
-
-  <!-- TEACHING ASSISTANT -->
-
-  <section class="teaching-section">
-
-    <h2>Teaching Assistant</h2>
-
-
-    <div class="course-list">
-
-
-      <div class="course-item">
-
-        <div>
-
-          <div class="course-item-title">
-            Data- and AI-Driven Marketing
-          </div>
-
-          <div class="course-item-info">
-            Undergraduate &amp; Master · 2 sessions
-          </div>
-
-        </div>
-
-        <div class="course-item-date">
-          Fall 2024
-        </div>
-
-      </div>
-
-
-
-      <div class="course-item">
-
-        <div>
-
-          <div class="course-item-title">
-            New Product Development
-          </div>
-
-          <div class="course-item-info">
-            Master · 2 sessions
-          </div>
-
-        </div>
-
-        <div class="course-item-date">
-          Fall 2022
-        </div>
-
-      </div>
-
-
-
-      <div class="course-item">
-
-        <div>
-
-          <div class="course-item-title">
-            Marketing Management
-          </div>
-
-          <div class="course-item-info">
-            Undergraduate · 5 sessions
-          </div>
-
-        </div>
-
-        <div class="course-item-date">
-          Fall 2021
-        </div>
-
-      </div>
-
+      <p>
+        My teaching combines industry experience, quantitative rigor,
+        and enthusiasm for marketing. I connect marketing concepts to
+        real-world decisions through tangible examples and cases, while
+        integrating data science into the classroom. My goal is to make
+        learning both practically meaningful and engaging.
+      </p>
 
     </div>
 
-  </section>
 
 
-</main>
+    <!-- INSTRUCTOR -->
+
+    <section class="teaching-section">
+
+      <h2>Instructor</h2>
+
+      <div class="featured-course">
+
+        <div class="course-header">
+
+          <div>
+
+            <div class="course-title">
+              Marketing Management
+            </div>
+
+            <div class="course-level">
+              Undergraduate · Purdue University
+            </div>
+
+          </div>
+
+          <div class="course-date">
+            Fall 2023
+          </div>
+
+        </div>
+
+        <div class="award">
+          Certificate for Outstanding Teaching
+        </div>
+
+      </div>
+
+    </section>
 
 
 
-<!-- FOOTER -->
+    <!-- TEACHING ASSISTANT -->
 
-<footer>
-  © 2026 Chaewon Seol
-</footer>
+    <section class="teaching-section">
+
+      <h2>Teaching Assistant</h2>
+
+      <div class="course-list">
+
+
+        <!-- COURSE 1 -->
+
+        <div class="course-item">
+
+          <div>
+
+            <div class="course-item-title">
+              Data- and AI-Driven Marketing
+            </div>
+
+            <div class="course-item-info">
+              Undergraduate &amp; Master · 2 sessions
+            </div>
+
+          </div>
+
+          <div class="course-item-date">
+            Fall 2024
+          </div>
+
+        </div>
+
+
+
+        <!-- COURSE 2 -->
+
+        <div class="course-item">
+
+          <div>
+
+            <div class="course-item-title">
+              New Product Development
+            </div>
+
+            <div class="course-item-info">
+              Master · 2 sessions
+            </div>
+
+          </div>
+
+          <div class="course-item-date">
+            Fall 2022
+          </div>
+
+        </div>
+
+
+
+        <!-- COURSE 3 -->
+
+        <div class="course-item">
+
+          <div>
+
+            <div class="course-item-title">
+              Marketing Management
+            </div>
+
+            <div class="course-item-info">
+              Undergraduate · 5 sessions
+            </div>
+
+          </div>
+
+          <div class="course-item-date">
+            Fall 2021
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Chaewon Seol
+  </footer>
 
 
 </body>
+
 </html>

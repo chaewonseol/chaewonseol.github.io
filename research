@@ -1,0 +1,123 @@
+<h1>Research</h1>
+<div class="water-line"></div>
+
+
+<!-- PUBLICATIONS -->
+
+<section class="research-section">
+  <h2>Publications</h2>
+
+  <div class="paper">
+    <div class="paper-title">
+      Consumer Impatience, Technological Innovation, and Market Structure
+    </div>
+
+    <div class="authors">
+      Chaewon Seol, Federico Rossi, Sara Valentini, and Elisa Montaguti
+    </div>
+
+    <div class="publication">
+      Marketing Science, Articles in Advance, 2026
+    </div>
+
+    <div class="note">
+      Selected for INFORMS Publicity Support
+    </div>
+
+    <div class="paper-links">
+      <a href="https://doi.org/10.1287/mksc.2024.0885" target="_blank">[Paper]</a>
+    </div>
+  </div>
+
+
+  <div class="paper">
+    <div class="paper-title">
+      Consumer Protection in the Era of Online Tracking:
+      Suggestions for Improving Legislative Framework
+    </div>
+
+    <div class="authors">
+      J. Na, H. Ko, J. Lee, J. Kim, S. Park, E. Cho, Lee, and Chaewon Seol
+    </div>
+
+    <div class="publication">
+      Policy Research Report, Korea Internet & Security Agency (KISA), 2018
+    </div>
+
+    <div class="paper-links">
+      <a href="https://www.kisa.or.kr/204/form?postSeq=0011807&lang_type=KO#fndoDocumentPreview"
+         target="_blank">[Report]</a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- JOB MARKET PAPER -->
+
+<section class="research-section">
+  <h2>Job Market Paper</h2>
+
+  <div class="paper">
+    <div class="paper-title">
+      Trajectory Matters: Retail Exposure and Zoning Policies in Legal Cannabis Market
+    </div>
+
+    <div class="authors">
+      Chaewon Seol, Federico Rossi, and Ting Zhu
+    </div>
+
+    <div class="paper-description">
+      Quantifies the causal effect of dispensary exposure on consumption
+      using Transformer-based trajectories and storefront visual metrics,
+      and evaluates zoning policy effectiveness for youth protection.
+    </div>
+
+    <div class="paper-links">
+      <a href="#">[Abstract]</a>
+      <a href="YOUR_PAPER_LINK" target="_blank">[Paper]</a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- WORK IN PROGRESS -->
+
+<section class="research-section">
+  <h2>Work in Progress</h2>
+
+  <div class="paper">
+    <div class="paper-title">
+      How Valuable Is My Location Data? Monetization vs Privacy
+    </div>
+
+    <div class="authors">
+      Chaewon Seol, Federico Rossi, and Ting Zhu
+    </div>
+
+    <div class="paper-description">
+      Uses large-scale trajectory and co-visit data to model retail
+      substitution patterns and quantify the incremental value of
+      consumer geolocation information.
+    </div>
+  </div>
+
+
+  <div class="paper">
+    <div class="paper-title">
+      A Field Experiment on the Impact of Interactive Signage Exposure
+      on Cannabis Consumption
+    </div>
+
+    <div class="authors">
+      Chaewon Seol, Federico Rossi, Ting Zhu, and C. Thompson
+    </div>
+
+    <div class="paper-description">
+      Designs a large-scale field experiment using digital billboards
+      to evaluate digital ad effectiveness and optimize ad length and allocation.
+    </div>
+  </div>
+
+</section>

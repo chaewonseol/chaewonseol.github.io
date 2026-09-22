@@ -69,8 +69,8 @@
       padding: 0 30px;
 
       display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 65px;
+      grid-template-columns: 250px 1fr;
+      gap: 55px;
 
       align-items: start;
     }
@@ -78,9 +78,20 @@
 
     /* ---------- PROFILE PHOTO ---------- */
 
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
     .profile-photo {
-      width: 100%;
-      border-radius: 4px;
+      width: 220px;
+      height: 220px;
+
+      object-fit: cover;
+      object-position: center;
+
+      border-radius: 50%;
       display: block;
     }
 
@@ -202,8 +213,13 @@
         gap: 35px;
       }
 
+      .photo-container {
+        justify-content: flex-start;
+      }
+
       .profile-photo {
-        max-width: 280px;
+        width: 180px;
+        height: 180px;
       }
 
       h1 {
@@ -220,9 +236,7 @@
 <body>
 
 
-  <!-- ==============================
-       NAVIGATION
-       ============================== -->
+  <!-- NAVIGATION -->
 
   <nav>
 
@@ -246,7 +260,7 @@
           Teaching
         </a>
 
-        <a href="Chaewon_Seol_CV.pdf">
+        <a href="CV_References_Seol_.pdf" target="_blank">
           CV
         </a>
 
@@ -258,19 +272,17 @@
 
 
 
-  <!-- ==============================
-       MAIN
-       ============================== -->
+  <!-- MAIN -->
 
   <main>
 
 
     <!-- PROFILE PHOTO -->
 
-    <div>
+    <div class="photo-container">
 
       <img
-        src="profile.jpg"
+        src="profile_image.jpg"
         alt="Chaewon Seol"
         class="profile-photo"
       >
@@ -340,7 +352,7 @@
 
       <a
         class="cv-button"
-        href="CV_Seol_.pdf"
+        href="CV_References_Seol_.pdf"
         target="_blank"
       >
         View CV
@@ -354,14 +366,10 @@
 
 
 
-  <!-- ==============================
-       FOOTER
-       ============================== -->
+  <!-- FOOTER -->
 
   <footer>
-
     © 2026 Chaewon Seol
-
   </footer>
 
 

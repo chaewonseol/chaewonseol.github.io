@@ -119,20 +119,29 @@
     }
 
 
-    /* ---------- PHOTOS ---------- */
+    /* ---------- SWIMMING SECTION ---------- */
 
-    .single-photo {
-      width: 100%;
-      height: 290px;
-
-      object-fit: cover;
-      object-position: center;
-
-      border-radius: 6px;
-      display: block;
-
-      margin-bottom: 18px;
+    .swim-card {
+      display: grid;
+      grid-template-columns: 46% 1fr;
+      gap: 25px;
+      align-items: center;
     }
+
+    .swim-photo-container {
+      width: 100%;
+    }
+
+    .swim-photo {
+      width: 100%;
+      height: auto;
+
+      display: block;
+      border-radius: 6px;
+    }
+
+
+    /* ---------- PLANT & ANIMAL PHOTOS ---------- */
 
     .photo-grid {
       display: grid;
@@ -158,13 +167,13 @@
 
     .fun-text {
       color: #536f7e;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.65;
     }
 
     .fun-text p {
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .fun-text p:last-child {
@@ -222,8 +231,9 @@
         padding: 18px;
       }
 
-      .single-photo {
-        height: 230px;
+      .swim-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
       }
 
       .photo-grid {
@@ -299,12 +309,16 @@
 
       <h2>Swimmer &amp; Lifeguard</h2>
 
-      <div class="fun-card">
+      <div class="fun-card swim-card">
 
-        <img
-          src="guard.jpg"
-          alt="Swimming and lifeguarding"
-          class="single-photo">
+        <div class="swim-photo-container">
+
+          <img
+            src="guard.jpeg"
+            alt="Swimming and lifeguarding"
+            class="swim-photo">
+
+        </div>
 
         <div class="fun-text">
 
@@ -321,7 +335,7 @@
           </p>
 
           <p class="little-note">
-            I am happy that I can thrive in the water and save
+            I am happy that I can thrive in the water—and even save
             someone if needed!
           </p>
 
@@ -367,12 +381,12 @@
           </p>
 
           <p>
-            I enjoy watching them grow from small sprouts or seeds into plants and
-            propagating them to share with my friends.
+            I enjoy watching them grow from small sprouts or seeds into
+            plants and propagating them to share with my friends.
           </p>
 
           <p>
-            I also love animals especially my dog and I think the
+            I also love animals—especially my dog—and I think the
             feeling is mutual! Whenever I go out, I somehow meet different
             kinds of animals quite easily.
           </p>
